@@ -10,6 +10,6 @@ def loadNicknames():
 
 def initialize():
     with open("config.yaml", "r") as ymlfile:
-        cfg = yaml.load(ymlfile)
+        cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
     nicknames = loadNicknames()
     return cfg, nicknames
