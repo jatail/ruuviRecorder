@@ -1,0 +1,17 @@
+ruuvirecorder:
+   interval: 3
+influx:
+    active: True
+    host: localhost
+    port: 8086
+    username: username
+    password: password
+    db: database
+    ssl: False
+    verify_ssl: False
+mqtt:
+    active: True
+    client_id: ruuvirecorder1
+    host: localhost
+    port: 1883
+    prefix: ruuvirecorder
